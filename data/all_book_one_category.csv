@@ -1,2 +1,33 @@
-All books of the category Mystery
-"[{'Titre': 'Sharp Objects', 'Prix': '£47.82', 'Disponibilité': 'In stock'}, {'Titre': 'In a Dark, Dark Wood', 'Prix': '£19.63', 'Disponibilité': 'In stock'}, {'Titre': 'The Past Never Ends', 'Prix': '£56.50', 'Disponibilité': 'In stock'}, {'Titre': 'A Murder in Time', 'Prix': '£16.64', 'Disponibilité': 'In stock'}, {'Titre': 'The Murder of Roger Ackroyd (Hercule Poirot #4)', 'Prix': '£44.10', 'Disponibilité': 'In stock'}, {'Titre': 'The Last Mile (Amos Decker #2)', 'Prix': '£54.21', 'Disponibilité': 'In stock'}, {'Titre': 'That Darkness (Gardiner and Renner #1)', 'Prix': '£13.92', 'Disponibilité': 'In stock'}, {'Titre': 'Tastes Like Fear (DI Marnie Rome #3)', 'Prix': '£10.69', 'Disponibilité': 'In stock'}, {'Titre': 'A Time of Torment (Charlie Parker #14)', 'Prix': '£48.35', 'Disponibilité': 'In stock'}, {'Titre': 'A Study in Scarlet (Sherlock Holmes #1)', 'Prix': '£16.73', 'Disponibilité': 'In stock'}, {'Titre': 'Poisonous (Max Revere Novels #3)', 'Prix': '£26.80', 'Disponibilité': 'In stock'}, {'Titre': 'Murder at the 42nd Street Library (Raymond Ambler #1)', 'Prix': '£54.36', 'Disponibilité': 'In stock'}, {'Titre': 'Most Wanted', 'Prix': '£35.28', 'Disponibilité': 'In stock'}, {'Titre': 'Hide Away (Eve Duncan #20)', 'Prix': '£11.84', 'Disponibilité': 'In stock'}, {'Titre': 'Boar Island (Anna Pigeon #19)', 'Prix': '£59.48', 'Disponibilité': 'In stock'}, {'Titre': 'The Widow', 'Prix': '£27.26', 'Disponibilité': 'In stock'}, {'Titre': 'Playing with Fire', 'Prix': '£13.71', 'Disponibilité': 'In stock'}, {'Titre': 'What Happened on Beale Street (Secrets of the South Mysteries #2)', 'Prix': '£25.37', 'Disponibilité': 'In stock'}, {'Titre': ""The Bachelor Girl's Guide to Murder (Herringford and Watts Mysteries #1)"", 'Prix': '£52.30', 'Disponibilité': 'In stock'}, {'Titre': 'Delivering the Truth (Quaker Midwife Mystery #1)', 'Prix': '£20.89', 'Disponibilité': 'In stock'}, {'Titre': 'The Mysterious Affair at Styles (Hercule Poirot #1)', 'Prix': '£24.80', 'Disponibilité': 'In stock'}, {'Titre': 'In the Woods (Dublin Murder Squad #1)', 'Prix': '£38.38', 'Disponibilité': 'In stock'}, {'Titre': 'The Silkworm (Cormoran Strike #2)', 'Prix': '£23.05', 'Disponibilité': 'In stock'}, {'Titre': 'The Exiled', 'Prix': '£43.45', 'Disponibilité': 'In stock'}, {'Titre': ""The Cuckoo's Calling (Cormoran Strike #1)"", 'Prix': '£19.21', 'Disponibilité': 'In stock'}, {'Titre': 'Extreme Prey (Lucas Davenport #26)', 'Prix': '£25.40', 'Disponibilité': 'In stock'}, {'Titre': 'Career of Evil (Cormoran Strike #3)', 'Prix': '£24.72', 'Disponibilité': 'In stock'}, {'Titre': ""The No. 1 Ladies' Detective Agency (No. 1 Ladies' Detective Agency #1)"", 'Prix': '£57.70', 'Disponibilité': 'In stock'}, {'Titre': 'The Girl You Lost', 'Prix': '£12.29', 'Disponibilité': 'In stock'}, {'Titre': 'The Girl In The Ice (DCI Erika Foster #1)', 'Prix': '£15.85', 'Disponibilité': 'In stock'}, {'Titre': 'Blood Defense (Samantha Brinkman #1)', 'Prix': '£20.30', 'Disponibilité': 'In stock'}, {'Titre': ""1st to Die (Women's Murder Club #1)"", 'Prix': '£53.98', 'Disponibilité': 'In stock'}]"
+Titre,Prix,Disponibilité
+Sharp Objects,£47.82,In stock
+"In a Dark, Dark Wood",£19.63,In stock
+The Past Never Ends,£56.50,In stock
+A Murder in Time,£16.64,In stock
+The Murder of Roger Ackroyd (Hercule Poirot #4),£44.10,In stock
+The Last Mile (Amos Decker #2),£54.21,In stock
+That Darkness (Gardiner and Renner #1),£13.92,In stock
+Tastes Like Fear (DI Marnie Rome #3),£10.69,In stock
+A Time of Torment (Charlie Parker #14),£48.35,In stock
+A Study in Scarlet (Sherlock Holmes #1),£16.73,In stock
+Poisonous (Max Revere Novels #3),£26.80,In stock
+Murder at the 42nd Street Library (Raymond Ambler #1),£54.36,In stock
+Most Wanted,£35.28,In stock
+Hide Away (Eve Duncan #20),£11.84,In stock
+Boar Island (Anna Pigeon #19),£59.48,In stock
+The Widow,£27.26,In stock
+Playing with Fire,£13.71,In stock
+What Happened on Beale Street (Secrets of the South Mysteries #2),£25.37,In stock
+The Bachelor Girl's Guide to Murder (Herringford and Watts Mysteries #1),£52.30,In stock
+Delivering the Truth (Quaker Midwife Mystery #1),£20.89,In stock
+The Mysterious Affair at Styles (Hercule Poirot #1),£24.80,In stock
+In the Woods (Dublin Murder Squad #1),£38.38,In stock
+The Silkworm (Cormoran Strike #2),£23.05,In stock
+The Exiled,£43.45,In stock
+The Cuckoo's Calling (Cormoran Strike #1),£19.21,In stock
+Extreme Prey (Lucas Davenport #26),£25.40,In stock
+Career of Evil (Cormoran Strike #3),£24.72,In stock
+The No. 1 Ladies' Detective Agency (No. 1 Ladies' Detective Agency #1),£57.70,In stock
+The Girl You Lost,£12.29,In stock
+The Girl In The Ice (DCI Erika Foster #1),£15.85,In stock
+Blood Defense (Samantha Brinkman #1),£20.30,In stock
+1st to Die (Women's Murder Club #1),£53.98,In stock
