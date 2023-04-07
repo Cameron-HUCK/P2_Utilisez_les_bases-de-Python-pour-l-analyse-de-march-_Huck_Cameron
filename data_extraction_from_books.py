@@ -52,7 +52,7 @@ while category_url:
         category_url = None
 
 # Créer un DataFrame pandas avec les informations extraites et l'enregistrer dans un fichier CSV
-category_book_data = pd.DataFrame(category_books).to_csv("data/all_book_one_category.csv", sep=",", index=False)
+category_book_data = pd.DataFrame(category_books).to_csv("data/all_book_one_category.csv", sep=";", index=False)
 
 ########################################################################################################
 # URL racine du site
@@ -75,7 +75,7 @@ for all_book_category_link in all_book_category_links:
         all_book_category_soup = BeautifulSoup(all_book_category_page.content, 'html.parser')
 
         # Boucle à travers tous les livres de la page
-        for article in all_book_category_soup.find_all('article', {'class': 'product_pod'}):
+        for i, article in enumerate(all_book_category_soup.find_all('article', {'class': 'product_pod'})):
             # Récupération des informations du livre
             all_book_title = article.h3.a.get('title')
             all_book_price = article.select('.price_color')[0].get_text()
@@ -85,7 +85,7 @@ for all_book_category_link in all_book_category_links:
 
             # Téléchargement de l'image et sauvegarde localement
             img_data = requests.get(img_url).content
-            img_name = f"{all_book_title.replace('/', '-').replace(':', '-').replace('?', '')}.jpg"
+            img_name = article.img['src'].split("/")[-1]
             img_path = f"data/images/{img_name}"
             with open(img_path, 'wb') as handler:
                 handler.write(img_data)
@@ -101,5 +101,5 @@ for all_book_category_link in all_book_category_links:
             all_book_category_url = None
 
 # Créer un DataFrame pandas avec les informations extraites
-book_data = pd.DataFrame(all_books).to_csv('data/all_books_all_category.csv', sep=',', index=False)
+book_data = pd.DataFrame(all_books).to_csv('data/all_books_all_category.csv', sep=';', index=False)
 
