@@ -52,7 +52,7 @@ while category_url:
         category_url = None
 
 # Créer un DataFrame pandas avec les informations extraites et l'enregistrer dans un fichier CSV
-category_book_data = pd.DataFrame(category_books).to_csv("data/all_book_one_category.csv", sep=";", index=False)
+category_book_data = pd.DataFrame(category_books).to_csv("data/all_book_one_category.csv", sep=",", index=False)
 
 ########################################################################################################
 # URL racine du site
@@ -101,5 +101,5 @@ for all_book_category_link in all_book_category_links:
             all_book_category_url = None
 
 # Créer un DataFrame pandas avec les informations extraites
-book_data = pd.DataFrame(all_books).to_csv('data/all_books_all_category.csv', sep=';', index=False)
+book_data = pd.DataFrame(all_books).to_csv('data/all_books_all_category.csv', sep=',', index=False)
 
