@@ -5,11 +5,13 @@ import pandas as pd
 # Define the root URL of the site
 url = "http://books.toscrape.com/"
 
+
 # Define the function to extract the content from a webpage
 def extract(url):
     page = requests.get(url)
     soup = BeautifulSoup(page.content, "html.parser")
     return soup
+
 
 # Define the function to transform the extracted data into a Pandas DataFrame
 def transform(data, category=None):
@@ -24,17 +26,19 @@ def transform(data, category=None):
         img_path = f"data/images/{img_name}"
         with open(img_path, 'wb') as handler:
             handler.write(img_data)
-        books.append({'Title': title, 'Price': price, 'Availability': availability, 'Category': category})
+            books.append({'Title': title, 'Price': price, 'Availability': availability, 'Category': category})
     return pd.DataFrame(books)
 
 
 # Define the function to load the transformed data into a CSV file
 def load(data, filename):
-    data.to_csv(filename, sep=',', index=False)
+    data.to_csv(filename, sep=',', index=False, encoding='utf-8')
 
-# Extract data for a single book
-soup = extract("http://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html")
-data = transform([soup])
+
+# Extract data for the first book on the home page
+soup = extract("http://books.toscrape.com/")
+first_book = soup.select('.product_pod')[0]
+data = transform([first_book])
 load(data, "data/one_product.csv")
 
 # Extract data for all books in the Mystery category
