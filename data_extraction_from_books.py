@@ -21,21 +21,19 @@ def transform(data, category=None):
     if not os.path.exists(folder_name):
         # Create the folder
         os.makedirs(folder_name)
-        print("Folder created successfully")
     else:
-        print("Folder already exists")
-    for item in data:
-        title = item.h3.a.get('title') if item.h3 and item.h3.a else ""
-        price = item.select('.price_color')[0].get_text()
-        availability = item.select('.availability')[0].get_text().strip()
-        img_url = url + item.img['src'].replace('../', '')
-        img_data = requests.get(img_url).content
-        img_name = item.img['src'].split("/")[-1]
-        img_path = f"{os.getcwd()}/data/images/{img_name}"
-        with open(img_path, 'wb') as handler:
-            handler.write(img_data)
-            books.append({'Title': title, 'Price': price, 'Availability': availability, 'Category': category})
-    return pd.DataFrame(books)
+        for item in data:
+            title = item.h3.a.get('title') if item.h3 and item.h3.a else ""
+            price = item.select('.price_color')[0].get_text()
+            availability = item.select('.availability')[0].get_text().strip()
+            img_url = url + item.img['src'].replace('../', '')
+            img_data = requests.get(img_url).content
+            img_name = item.img['src'].split("/")[-1]
+            img_path = f"{os.getcwd()}/data/images/{img_name}"
+            with open(img_path, 'wb') as handler:
+                handler.write(img_data)
+                books.append({'Title': title, 'Price': price, 'Availability': availability, 'Category': category})
+        return pd.DataFrame(books)
 
 
 # Define the function to load the transformed data into a CSV file
